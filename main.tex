@@ -1,0 +1,44 @@
+\documentclass[12pt,a4paper,titlepage,twoside]{report}
+
+% ============
+% CONFIGURACIÓN
+% vvvvvvvvvvvv
+  
+  \newcommand{\Subject}{ ASIGNATURA } % Lo que va debajo de "Coleción de problemas" en la portada, y a arriba a la derecha en todas las hojas
+  
+  \newcommand{\Degree}{ Ingeniería Aeroespacial } % Lo que va debajo de los títulos en la portada  
+  \newcommand{\Especiality}{ Navegación y Sistemas Aeroespaciales } % Debajo del grado
+
+  \newcommand{\Author}{ Iván Moya Ortiz } % Lo que va encima de la fecha
+  \newcommand{\Location}{ Madrid } % Lo que acompaña a la fecha
+% ^^^^^^^^^^^^
+
+% ============
+% ARCHIVOS DE CONFIGURACIÓN
+% ============
+\input{include/pkgs}
+\input{include/page_style}
+\input{include/boxes}
+\input{include/math_symbols}
+% ========================
+\begin{document}
+
+\input{include/title}
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+
+\setcounter{page}{0}
+\pagenumbering{arabic}
+% ========================
+
+
+% ============
+% AÑADIR COSAS A PARTIR DE AQUÍ
+% vvvvvvvvvvvv
+\input{contents/ch1}
+
+
+% ^^^^^^^^^^^^
+\end{document}
